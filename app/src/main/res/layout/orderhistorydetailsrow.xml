@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/orderHistoryDetailsdishnamerow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:layout_weight="1.5"
+                />
+
+            <TextView
+                android:id="@+id/orderHistoryDetailsquantityrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:layout_weight="0.75"
+                android:paddingBottom="4dp"/>
+
+
+            <TextView
+                android:id="@+id/orderHistoryDetailspricerow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:paddingBottom="4dp" />
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#8e8e8e"
+            ></View>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

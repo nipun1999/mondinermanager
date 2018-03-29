@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.agarw.mondinermanager_android.bill"
+    android:background="@color/background">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/billrecycler"
+        android:layout_width="395dp"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/billtotaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clearbutton"
+        android:layout_alignEnd="@+id/billrecycler"
+        android:layout_alignRight="@+id/billrecycler"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:text="100"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="559dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/billtotaltxt"
+        android:layout_alignBottom="@+id/billtotaltxt"
+        android:layout_alignLeft="@+id/billrecycler"
+        android:layout_alignStart="@+id/billrecycler"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:text="Total Amount"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="CheckOut"
+        android:background="@color/colorAccent"
+        android:textColor="@color/text"/>
+</RelativeLayout>

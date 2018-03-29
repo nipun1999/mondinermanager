@@ -1,0 +1,348 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.agarw.mondinermanager_android.Adddetails"
+    android:background="@color/background"
+    android:id="@+id/mScrollView">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Profile"
+            android:textColor="@color/text"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:text="Name"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView3"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/closedaystext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/openhourstext"
+            android:layout_alignStart="@+id/openhourstext"
+            android:layout_alignTop="@+id/textView13"
+            android:ems="10"
+            android:hint="CloseHours"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/contacttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView16"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:hint="Contact"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/telephonetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:hint="Telephone"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/servestext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_alignEnd="@+id/descriptiontext"
+            android:layout_alignRight="@+id/descriptiontext"
+            android:ems="10"
+            android:hint="Serves Cuisine"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/descriptiontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView12"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/openhourstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:hint="OpenHours"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/longitudetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:hint="Longitude"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/nametext"
+            android:layout_marginTop="13dp"
+            android:text="Address"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lattitudetext"
+            android:layout_alignBottom="@+id/lattitudetext"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:text="Lattitude"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/lattitudetext"
+            android:layout_marginTop="16dp"
+            android:text="Longitude"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView13"
+            android:layout_alignRight="@+id/textView13"
+            android:layout_below="@+id/closedaystext"
+            android:layout_marginTop="30dp"
+            android:text="Description"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignTop="@+id/logoimagebutton"
+            android:layout_marginTop="72dp"
+            android:text="Logo"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView9"
+            android:layout_alignRight="@+id/textView9"
+            android:layout_below="@+id/contacttext"
+            android:layout_marginTop="24dp"
+            android:text="Telephone"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_below="@+id/servestext"
+            android:layout_marginTop="24dp"
+            android:text="Contact"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/descriptiontext"
+            android:layout_marginTop="28dp"
+            android:text="Cusisine"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="28dp"
+            android:text="Close Days"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/lattitudetext"
+            android:layout_marginTop="72dp"
+            android:text="Open Hours"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/addresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nametext"
+            android:layout_alignStart="@+id/nametext"
+            android:layout_alignTop="@+id/textView4"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/lattitudetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/addresstext"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="lattitude"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint" />
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/logoimagebutton"
+            android:layout_marginTop="28dp"
+            android:text="Edit"
+            android:background="@color/colorAccent"
+            android:textColor="@color/text"/>
+
+        <ImageButton
+            android:id="@+id/logoimagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/telephonetext"
+            android:layout_alignStart="@+id/telephonetext"
+            android:layout_below="@+id/telephonetext"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView16"
+            android:text="Save"
+            android:background="@color/colorAccent"
+            android:textColor="@color/text"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+

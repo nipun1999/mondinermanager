@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name_indian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paneer"
+            android:textSize="16sp"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:id="@+id/item_price_indian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200"
+            android:textSize="14sp"
+            android:textColor="@color/text"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_veg_indian"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Veg"
+        android:textColor="@color/text"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="Edit"
+        android:textColor="@color/text"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="5dp"/>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/availabilityswitch"
+            android:text="Availibility"
+            android:checked="true"
+            android:layout_margin="15dp"
+            android:textColor="@color/text"/>
+        <!-- <Button
+             android:id="@+id/add_btn_frame"
+             android:layout_widt h="100dp"
+             android:layout_height="wrap_content"
+             android:text="Add"/>-->
+
+    </FrameLayout>
+
+</LinearLayout>

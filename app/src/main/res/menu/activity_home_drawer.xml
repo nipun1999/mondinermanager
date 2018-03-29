@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addusernav"
+            android:title="Profile" />
+        <item android:id="@+id/sortedtablesnav"
+            android:title="Tables">
+        </item>
+        <item
+            android:title="Offers"
+            android:id="@+id/addoffersnav"/>
+        <item android:id="@+id/menunav"
+            android:title="Menu"/>
+        <item android:title="Add Ons"
+            android:id="@+id/addOnNav"/>
+        <item android:title="Order History"
+            android:id="@+id/orderHistoryNav"></item>
+        <item android:title="Sign out"
+            android:id="@+id/signoutnav"/>
+
+        <item android:id="@+id/changerestaurantnav"
+            android:title="Change Restaurant">
+
+        </item>
+
+
+
+
+    </group>
+
+
+</menu>

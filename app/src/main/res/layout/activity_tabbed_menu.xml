@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/background">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="scrollable">
+            </android.support.design.widget.TabLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+    <View
+        android:id="@+id/fabBGLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/fabLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="23dp"
+        android:padding="12dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="23dp"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone">
+        <!--    if you are not using Snackbar with this activity then remove below line from every place of the file:
+            app:layout_behavior="com.ajaysinghdewari.floatingactionbuttonmenu.activities.utils.MoveUpwardBehavior"
+            the above line enables the view to Scrolls up with the snackbar as, the FAB do automaticaly scrolls up
+            when the snackbar appear, so if snackbar is not used please remove the above line from every view present in the xml-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Dish"
+            android:textColor="@color/text"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addDishFloatingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/cutlery"
+            app:fabSize="mini"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fabLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:clipToPadding="false"
+        android:layout_marginRight="23dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="23dp"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Cuisine"
+            android:textColor="@color/text"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addCuisineFloatingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/restaurantmenu"
+            app:fabSize="mini"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:gravity="center_vertical"
+        android:clipToPadding="false"
+        android:padding="12dp"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_gravity="bottom|end">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:gravity="center_vertical"
+            app:srcCompat="@drawable/plus"
+            app:fabSize="normal"/>
+    </LinearLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<com.github.clans.fab.FloatingActionMenu-->
+                <!--android:id="@+id/fab_menu"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:paddingBottom="50dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--app:menu_backgroundColor="#ccffffff"-->
+                <!--app:menu_fab_label="Choose an action"-->
+                <!--app:fab_colorNormal="@color/colorAccent"-->
+                <!--app:fab_colorPressed="#E75043"-->
+                <!--app:fab_colorRipple="#99FFFFFF"-->
+                <!--app:fab_showShadow="true"-->
+                <!--app:menu_labels_colorNormal="#333333"-->
+                <!--app:menu_labels_colorPressed="#444444"-->
+                <!--app:menu_labels_colorRipple="#66FFFFFF"-->
+                <!--app:menu_labels_showShadow="true"-->
+                <!--app:menu_labels_maxLines="-1"-->
+                <!--app:menu_labels_position="left"-->
+                <!--app:menu_openDirection="up"-->
+                <!--app:fab_shadowColor="#66000000"-->
+                <!--app:menu_labels_ellipsize="end"-->
+                <!--app:menu_labels_singleLine="true">-->
+
+                <!--<com.github.clans.fab.FloatingActionButton-->
+                    <!--android:id="@+id/addDishFloatBtn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@android:drawable/ic_menu_add"-->
+                    <!--app:fab_label="Add New Dish"-->
+                    <!--app:fab_size="mini" />-->
+
+                <!--<com.github.clans.fab.FloatingActionButton-->
+                    <!--android:id="@+id/addCuisineFloatButton"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@android:drawable/ic_menu_add"-->
+                    <!--app:fab_label="Add New Cuisine"-->
+                    <!--app:fab_size="mini" />-->
+
+            <!--</com.github.clans.fab.FloatingActionMenu>-->
+
+        <!--</RelativeLayout>-->
+
+</android.support.design.widget.CoordinatorLayout>
